@@ -12,6 +12,4 @@ router.get('/refresh_token' , userCtrl.refreshToken);
 
 router.get('/infor',auth, userCtrl.getUser)
 
-router.get('/history', auth, userCtrl.history)
-
 module.exports = router;
