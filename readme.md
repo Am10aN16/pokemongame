@@ -25,10 +25,10 @@ git clone https://github.com/Am10aN16/pokemongame.git
 2. Install the dependencies for both the backend and frontend:
 
 cd pokemon-adoption-app
-# npm install
+- npm install
 
 cd client
-# npm install
+- npm install
 
 
 3. Set up the MongoDB database:
@@ -40,10 +40,10 @@ cd client
 4. Start the backend and frontend servers:
 
 cd pokemon-adoption-app
-# node index.js
+- node index.js
 
-cd ../frontend
-# npm start
+cd client
+- npm start
 
 
 5. Access the application in your web browser at `http://localhost:3000`.
