@@ -24,10 +24,10 @@ git clone https://github.com/Am10aN16/pokemongame.git
 
 2. Install the dependencies for both the backend and frontend:
 
-cd pokemon-adoption-app
+- cd pokemon-adoption-app
 - npm install
 
-cd client
+- cd client
 - npm install
 
 
@@ -39,10 +39,10 @@ cd client
 
 4. Start the backend and frontend servers:
 
-cd pokemon-adoption-app
+- cd pokemon-adoption-app
 - node index.js
 
-cd client
+- cd client
 - npm start
 
 
