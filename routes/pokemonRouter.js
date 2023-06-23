@@ -19,7 +19,6 @@ router.post('/addpokemon', async (req, res) => {
     }
   });
 
-
 // Route to get available Pokemon for adoption
 router.get('/pokemon', async (req, res) => {
     try {
@@ -34,7 +33,7 @@ router.get('/pokemon', async (req, res) => {
 router.post('/pokemon/:id/adopt',auth, async (req, res) => {
   const pokemonId = req.params.id;
   const userId = req.user.id; // Assuming user authentication middleware is used
-  console.log(userId);
+  
     try {
     const pokemon = await Pokemon.findById(pokemonId);
     

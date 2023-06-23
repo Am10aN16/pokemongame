@@ -21,10 +21,11 @@ const adoptedPokemon= async()=>{
     });
     Swal.fire({
       imageUrl: `${Pokeball}`,
-      imageHeight: 200,
-      imageAlt: 'Pokemon'
+      imageHeight: 180,
+      imageAlt: 'Pokemon',
+      text:`Hurray!! Adopted the ${pokemon.breed}`
     })
-      console.log("adopted");
+    window.location.href="/pokemons"
     }else{
       Swal.fire(
         'Want to Adopt?',

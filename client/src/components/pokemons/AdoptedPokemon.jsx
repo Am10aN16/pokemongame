@@ -29,7 +29,7 @@ const AdoptedPokemon = () => {
         myPokemons(); 
 },[])
 
-const feedPokemon = async(pokeId)=>{
+const feedPokemon = async(pokeId,name)=>{
 
 try {
     await axios.post(`/api/pokemon/${pokeId}/feed`);
@@ -37,16 +37,16 @@ try {
       imageUrl:` ${Pokeball}`,
       imageHeight: 200,
       imageAlt: 'Pokemon',
-      text:'Feeded the Pokemon'
+      text:`Great!! Feeded the Pokemon: ${name}`
     })
-// alert("Feeded the pokemon");
+
 } catch (error) {
     throw error;
 }
 }
 
   return (
-    <div className='products'>
+    <div className='main'>
         {
        myPokemon.map(pokemon => {
         return (   
@@ -61,7 +61,7 @@ try {
       <p >I am there to fight for you!!. My name is <span style={{
         textTransform:"uppercase",color:"#ff0101"
       }}>{pokemon.breed}</span> </p>
-      <button className='btn' onClick={()=>feedPokemon(pokemon._id)}>Feed Me</button>
+      <button className='btn' onClick={()=>feedPokemon(pokemon._id, pokemon.breed)}>Feed Me</button>
     </div>
   </div>
         
