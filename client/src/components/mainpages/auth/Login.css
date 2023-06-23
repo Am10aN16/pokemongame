@@ -31,22 +31,22 @@
 
 .login-page form button{
     width: 150px;
-    background: #404040;
-    color: #ec0b0b;
+    background: #ffd5d5;
+    color:  #890101;
     border-radius: 5px;
     text-transform: uppercase;
     letter-spacing: 1.3px;
     font-weight: 600;
-    border: 2px solid #8b1010;
+    border: 2px solid  #890101;
 }
 
 .login-page form a{
-    color: #ec0b0b;
+    color:  #890101;
     font-weight: 600;
-    border: 2px solid #8b1010;
+    border: 2px solid  #890101;
     letter-spacing: 1.3px;
     text-transform: uppercase;
     border-radius:5px ;
     padding: 10px 20px;
-    background-color: #404040;
+    background-color: #ffd5d5;
 }

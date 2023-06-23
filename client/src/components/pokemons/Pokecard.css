@@ -9,6 +9,37 @@
     }
 }
 
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    
+    justify-content: center; 
+    
+}
+.main .card{
+    flex: 0 0 25.6%;
+}
+
+@media(max-width:880px){
+    .main .card{
+        
+        flex: 0 0 34.6%;
+    }
+}
+@media(max-width:630px){
+    .main .card{
+        
+        flex: 0 0 50%;
+    }
+}
+@media(max-width:520px){
+    .main .card{
+        
+        flex: 0 0 80%;
+    }
+}
+
 .card {
     background: #404040;
     display: flex;

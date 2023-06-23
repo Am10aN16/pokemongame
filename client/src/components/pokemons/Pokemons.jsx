@@ -25,8 +25,8 @@ const Pokemons = () => {
     },[])
 
   return (
-    <>
-    <div className='products'>
+    <div className='main'>
+  
 
     {
       pokemons.map(pokemon => {
@@ -35,9 +35,9 @@ const Pokemons = () => {
       })
     }
   
-    </div>
+ 
     <Footer/>
-    </>
+    </div>
   )
 }
 

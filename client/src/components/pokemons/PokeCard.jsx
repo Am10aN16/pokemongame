@@ -12,7 +12,7 @@ const PokeCard = ({pokemon}) => {
   const [token] = state.token
   const navigate = useNavigate()
 
-const adoptedPokemon= async(id)=>{
+const adoptedPokemon= async()=>{
   try {
     if(token){
       await axios.post(`/api/pokemon/${pokemon._id}/adopt`, {id},
@@ -20,9 +20,9 @@ const adoptedPokemon= async(id)=>{
        headers: {Authorization : token}
     });
     Swal.fire({
-      imageUrl: {Pokeball},
+      imageUrl: `${Pokeball}`,
       imageHeight: 200,
-      imageAlt: 'A tall image'
+      imageAlt: 'Pokemon'
     })
       console.log("adopted");
     }else{
